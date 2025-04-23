@@ -108,7 +108,7 @@ jump_power = 20.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -15)
-zoom = Vector2(5, 5)
+zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 position_smoothing_speed = 12.0
 
@@ -135,3 +135,7 @@ region_rect = Rect2(0, 0, 46, 46)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -19)
 shape = SubResource("RectangleShape2D_6cd4h")
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true

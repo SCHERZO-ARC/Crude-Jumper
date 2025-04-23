@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvay20jmtr7t3"
+path="res://.godot/imported/Estatic East PT.mp3-6e5b177df9394e7e4c02a36133370cb5.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Estatic East PT.mp3"
+dest_files=["res://.godot/imported/Estatic East PT.mp3-6e5b177df9394e7e4c02a36133370cb5.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
