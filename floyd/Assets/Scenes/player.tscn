@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://donvghwrlkyvk"]
+[gd_scene load_steps=12 format=3 uid="uid://donvghwrlkyvk"]
 
 [ext_resource type="Script" uid="uid://bj83b4lu0i4ht" path="res://Assets/Scripts/player_controller.gd" id="1_7dd06"]
 [ext_resource type="Script" uid="uid://uk0wj2apjjoo" path="res://Assets/Scripts/player_animator.gd" id="2_7dd06"]
+[ext_resource type="AudioStream" uid="uid://b66fs3nf1j0vf" path="res://Assets/Audio/cartoon-jump-6462.mp3" id="3_38rej"]
 
 [sub_resource type="Animation" id="Animation_7dd06"]
 length = 0.001
@@ -126,6 +127,9 @@ libraries = {
 autoplay = "idle"
 speed_scale = 2.157
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="PlayerAnimator/AnimationPlayer"]
+stream = ExtResource("3_38rej")
+
 [node name="Sprite2D" type="Sprite2D" parent="PlayerAnimator"]
 position = Vector2(0, -23)
 texture = SubResource("CompressedTexture2D_t1xgp")
@@ -135,7 +139,3 @@ region_rect = Rect2(0, 0, 46, 46)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -19)
 shape = SubResource("RectangleShape2D_6cd4h")
-
-[node name="CoyoteTimer" type="Timer" parent="."]
-wait_time = 0.25
-one_shot = true
